@@ -10,7 +10,6 @@ const Hero = () => {
     useGSAP(() => {
 
 
-
         const heroSplit = new SplitText('.title', {
             type: 'chars, words'
         })
@@ -42,8 +41,8 @@ const Hero = () => {
         })
             .to('.right-leaf', {y: 200}, 0)
             .to('.left-leaf', {y: -200}, 0)
-        const startValue=isMobile ?'top 50%': 'center 60%'
-        const endValue = isMobile ? '120% top':'bottom top'
+        const startValue = isMobile ? 'top 50%' : 'center 60%'
+        const endValue = isMobile ? '120% top' : 'bottom top'
 
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -78,7 +77,7 @@ const Hero = () => {
                                 Sip the Spirit <br/> of Summer
                             </p>
                         </div>
-                        <div className="view-cocktails">
+                        <div className="view-cocktails hidden md:block">
                             <p className="subtitle">
                                 Every mocktail on our new menu is a blend of premium ingredients, creative flair, and
                                 timeless recipes= designed to delight your senses.
